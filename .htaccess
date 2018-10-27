@@ -1,0 +1,4 @@
+AddHandler application/x-httpd-php72 php
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/public
+RewriteRule ^(.*)$ /public/$1

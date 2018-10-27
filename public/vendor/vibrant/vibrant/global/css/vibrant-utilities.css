@@ -1,0 +1,130 @@
+.fadeIn-onLoad{
+    opacity: 0;
+    transition: all 300ms;
+}
+.container-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3)
+}
+.icon{
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    text-rendering: auto;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.close-icon, .is-open .open-icon{
+    display: none !important;
+}
+.open-icon, .is-open .close-icon{
+    display: inherit !important;
+}
+.with-background-image{
+    background-size: cover;
+    background-position: center center;
+}
+.btn-round{
+    border-radius: 1000px;
+}
+.btn-icon{
+    font-size: 1.143rem;
+    line-height: 1em;
+    padding: 5px 13px;
+}
+.visible{
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: unset;
+}
+.hide{
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+ul.no-list-style{
+    list-style: none !important;
+}
+i.strong-icon{
+    margin-right: 5px;
+    font-weight: 700;
+    color: #409EFF;
+}
+.ita-bold-text{
+    font-style: italic;
+    font-weight: bold;
+}
+.fluidMedia {
+    position: relative;
+    padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.fluidMedia iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fullscreen{
+    top: 0;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    height: 100%;
+    border: none;
+}
+.fullScreenTip{
+    bottom: 20px;
+    top: auto;
+    background: black;
+    color: white;
+    width: 100px !important;
+    box-shadow: 0px 0px 5px 4px #80808078;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.border-thin{
+    border: 1px solid #e4e6e7;
+}
+.required-sign{
+    color: red;
+    float: left;
+    margin-right: 4px;
+    position: absolute
+}
+.CodeMirror {
+    border: 1px solid #eee;
+    height: auto;
+    margin-bottom: 20px;
+}
+.display-flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.alertify {
+    z-index: 100;
+}
+.link{
+    cursor: pointer;
+}

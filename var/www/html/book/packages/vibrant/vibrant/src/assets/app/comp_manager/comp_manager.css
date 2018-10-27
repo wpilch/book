@@ -1,0 +1,190 @@
+.container-overlay{
+    background-color: white !important;
+    z-index: 100;
+    border-radius: 4px;
+}
+.bg-bg{
+    background-color: #f2f4f5 !important;
+}
+#componentsApp .el-aside {
+    color: #333;
+    width: 240px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #8080801f;
+    border-radius: 4px;
+}
+#componentsApp .aside-container {
+    position: relative;
+}
+#componentsApp .aside-container > .el-menu {
+    border: none !important;
+    height: 100%;
+    overflow-y: auto;
+}
+#componentsApp .content-container {
+    padding: 0;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px 2px #8080801f;
+    border-radius: 4px;
+    background-color: white;
+}
+#componentsApp .el-container > .el-header {
+    padding: 15px;
+    background-color: #ecf5ff;
+    line-height: 2.1;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+}
+#componentsApp .el-container > .el-header .title{
+    line-height: 2.4;
+}
+#componentsApp .el-container > .el-header .close{
+    cursor: pointer;
+    line-height: 2.1;
+}
+#componentsApp .el-container > .el-header .close:hover{
+    color: #409EFF;
+}
+#componentsApp .aside-container .el-submenu__title {
+    height: 50px;
+    font-weight: 600;
+}
+#componentsApp .aside-container  .el-submenu__icon-arrow {
+    margin-top: -5px;
+}
+#componentsApp .component-panel-wrapper,
+#componentsApp .search-wrapper{
+    width: 100%;
+}
+#componentsApp .search-wrapper > .el-container > .el-main {
+    /*transition: all 2s;*/
+    position: relative;
+}
+#componentsApp .list-group-item{
+    cursor: pointer;
+    font-weight: 400;
+}
+#componentsApp .list-group-item:hover{
+    color: #409EFF !important;
+}
+#componentsApp .select-component-tip{
+    margin: 14% auto 0;
+    text-shadow: 2px 3px 4px #a2a2a247;
+}
+#componentsApp .el-menu-item:focus,  #componentsApp .el-menu-item:hover {
+    outline: 0;
+    background-color: #eaf1f9;
+}
+#componentsApp .el-submenu__title:hover {
+    background-color: #eaf1f9;
+}
+#componentsApp .parameter.required .param-label {
+    margin-left: 10px;
+}
+#componentsApp .CodeMirror{
+    height: 100%;
+}
+#componentsApp .param-label{
+    position: absolute;
+    font-size: 10px;
+}
+#componentsApp .param-input{
+    padding-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+#componentsApp .param-input .fw{
+    width: 95%;
+}
+#componentsApp .param-units{
+    display: inline-block;
+}
+#componentsApp .icon.tip{
+    margin-top: 20px;
+    color: #d5dadc
+}
+#componentsApp .el-switch__label.is-active {
+    color: #c1c1c1;
+}
+#componentsApp .el-switch__label {
+    color: #dcdfe7;
+}
+#componentsApp .block-content{
+    border: 1px solid #e3e6e7;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+#componentsApp .block-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #424242;
+    line-height: 2.1;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    background: #f2f4f5;
+    border: 1px solid #e3e6e7;
+    cursor: pointer;
+}
+#componentsApp .block-group > .block-content:not(:first-of-type){
+    border-top: none !important;
+}
+#componentsApp .group-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #a5b6d8;
+}
+#componentsApp .tip-panel {
+    height: 500px !important;
+    overflow-y: hidden;
+}
+#componentsApp .tip-panel .el-main {
+    max-height: 470px;
+}
+#componentsApp .component-loader .el-loading-spinner{
+    top: 100px;
+}
+.show-for-mobiles{
+    display: none;
+}
+#action-open-right-drawer{
+    margin-top: 2px;
+}
+#action-open-right-drawer > i{
+    font-size: 20px
+}
+@media ( max-width: 1200px){
+    #componentsApp .parameter.optional .el-input {
+        margin-left: 1.6%;
+    }
+}
+@media ( max-width: 991px ){
+    #componentsApp .main-container{
+        display: block !important;
+    }
+    #componentsApp .el-aside{
+        width: 100% !important;
+        height: 70px !important;
+        display: block;
+        min-height: initial !important;
+        position: relative;
+    }
+    #componentsApp .el-container > .el-header{
+        width: 100% !important;
+    }
+    #componentsApp .content-container{
+        width: 100% !important;
+        min-height: 440px !important;
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .show-for-mobiles{
+        display: block;
+    }
+}
