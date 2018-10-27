@@ -1,0 +1,57 @@
+{
+    "name": "vibrant/vibrant",
+    "description": "Vibrant Core & Components",
+    "version": "1.2.0",
+    "authors": [
+        {
+            "name": "Edgar Escudero",
+            "email": "edgar.escudero@aerobit.com"
+        }
+    ],
+    "require": {
+        "php" : "~7.1",
+        "illuminate/support": "^5.6.4",
+        "gossi/docblock": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vibrant\\Vibrant\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vibrant\\Vibrant\\VibrantServiceProvider"
+            ]
+        },
+        "vibrant":{
+            "app_name": "backend",
+            "visible": "true",
+            "settings": {
+                "route": "backend.components",
+                "name_lang": "vibrant::vibrant.reusable_components",
+                "description_lang": "vibrant::vibrant.reusable_components_description"
+            }
+        },
+        "scripts-dev": {
+            "post-update-cmd": [
+                "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+                "php artisan ide-helper:generate",
+                "php artisan ide-helper:meta",
+                "php artisan optimize"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.2-dev"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "App\\Providers\\EventServiceProvider::postAutoloadDump"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "secure-http": false
+    }
+}
